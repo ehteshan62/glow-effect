@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOW</title>
+
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            height: 100vh;
+            background-color: black;
+            color: #fff;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-left: 30px;
+            margin-bottom: 50px;
+        }
+
+        .button {
+            width: 170px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            color: #000;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .button-1 {
+            background-color: transparent;
+            border: 3px solid #00d7c3;
+            border-radius: 50px;
+            -webkit-transition: all .15s ease-in-out;
+            transition: all .15s ease-in-out;
+            color: #00d7c3;
+        }
+
+        .button-1:hover {
+            background-position: 100%;
+            box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+            border: 3px solid #00d7c3;
+        }
+
+        .button-2 {
+            color: #fff;
+            border: 3px solid #67d892;
+            background-image: -webkit-linear-gradient(30deg, #67d8c4 50%, transparent 50%);
+            background-image: linear-gradient(30deg, #67d8c4 50%, transparent 50%);
+            background-size: 500px;
+            background-repeat: no-repeat;
+            background-position: 0%;
+            -webkit-transition: background 300ms ease-in-out;
+            transition: background 300ms ease-in-out;
+        }
+
+        .button-2:hover {
+            background-position: 100%;
+            color: #67d892;
+        }
+
+        .button-3 {
+            border: 2px solid #3c73ff;
+            background-color: #3c73ff;
+            border-radius: 20px;
+            color: #fff;
+            transition: .3s;
+        }
+
+        .button-3:hover {
+            box-shadow: 8px 8px #99bdff;
+            transition: .3s;
+        }
+
+        .button-4 {
+            background-color: transparent;
+            border: 3px solid #ff0251;
+            color: #ff0251;
+            transition: .3s;
+        }
+
+        .button-4:hover {
+            animation: pulse 1s infinite;
+            transition: .3s;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            70% {
+                transform: scale(.9);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .button-5 {
+            width: 200px;
+            border-radius: 5px;
+            background-color: #F4F200;
+            background-image: #F4F200;
+            background-image: -moz-linear-gradient(top, #fff 0%, #F4F200 100%);
+            background-image: -webkit-linear-gradient(top, #fff 0%,#F4F200 100%);
+            background-image: linear-gradient(to bottom, #fff 0%,#F4F200 100%);
+            background-size: 300px;
+            background-repeat: no-repeat;
+            background-position: 0%;
+            -webkit-transition: background 300ms ease-in-out;
+            transition: background 300ms ease-in-out;
+        }
+
+        .button-5:hover {
+            background-position: -200%;
+            transition: background 300ms ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GLOW</h1>
+        <div class="button button-1">login</div>
+        <div class="button button-2">password</div>
+        <div class="button button-3">email</div>
+        <div class="button button-4">forget</div>
+        <div class="button button-5">username</div>
+    </div>
+</body>
+</html>
